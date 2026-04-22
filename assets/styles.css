@@ -182,6 +182,10 @@ h3 {
   gap: 14px;
 }
 
+.achievement-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .stat,
 .achievement,
 .card,
