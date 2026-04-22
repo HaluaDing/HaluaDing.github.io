@@ -327,7 +327,15 @@ h3 {
 .achievement p {
   font-size: 0.88rem;
   line-height: 1.55;
-  white-space: nowrap;
+}
+
+.achievement-lines {
+  display: grid;
+  gap: 4px;
+}
+
+.achievement-lines p {
+  margin-bottom: 0;
 }
 
 .contact {

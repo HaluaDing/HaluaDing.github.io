@@ -82,7 +82,14 @@ const renderAchievements = (items) => {
   const container = document.querySelector('#achievements-list');
   items.forEach((item) => {
     const article = create('article', 'achievement');
-    article.append(create('h3', '', item.title), create('p', '', item.detail));
+    article.append(create('h3', '', item.title));
+    if (Array.isArray(item.detail)) {
+      const list = create('div', 'achievement-lines');
+      item.detail.forEach((detail) => list.append(create('p', '', detail)));
+      article.append(list);
+    } else {
+      article.append(create('p', '', item.detail));
+    }
     container.append(article);
   });
 };
