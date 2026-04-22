@@ -89,11 +89,11 @@
       "type": "Under Review",
       "title": "HCQCNN-TN: A Fuzzy-Decision Hybrid Conditional Quantum Convolutional Neural Network Based on Tensor Network for Image Classification",
       "detail": "**Yifan Ding**, Junjie Pei, Lihua Gong, Chen Gong, Nanrun Zhou*. IEEE Transactions on Fuzzy Systems.",
-      "meta": "量子卷积神经网络、张量网络、图像分类"
+      "meta": "Under Review"
     },
     {
       "type": "Review Service",
-      "title": "Advanced Engineering Informatics、Machine Learning Science and Technology等 审稿人",
+      "title": "审稿人工作",
       "detail": "担任Advanced Engineering Informatics、Machine Learning Science and Technology等计算机及工程技术领域高水平期刊审稿人。",
       "meta": "Academic service"
     }
@@ -145,18 +145,13 @@
   ],
   "contact": [
     {
-      "label": "Email: 1369769205@qq.com",
+      "label": "Email: yfding@sues.edu.cn",
       "type": "copy",
-      "value": "1369769205@qq.com"
+      "value": "yfding@sues.edu.cn"
     },
     {
-      "label": "微信: DDD_Panda_DDD",
-      "type": "copy",
-      "value": "DDD_Panda_DDD"
-    },
-    {
-      "label": "GitHub: yfding",
-      "href": "https://github.com/yfding"
+      "label": "GitHub: HaluaDing",
+      "href": "https://github.com/HaluaDing"
     },
     {
       "label": "Resume PDF",
