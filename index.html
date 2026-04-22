@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="丁祎帆 Yifan Ding 的个人简介网页，聚焦量子机器学习、控制科学、嵌入式系统与硬件工程。"
+    />
+    <meta
+      name="keywords"
+      content="yfding, Yifan Ding, 丁祎帆, 量子机器学习, 控制科学, 嵌入式系统, 上海工程技术大学"
+    />
+    <title>yfding | 丁祎帆</title>
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav" aria-label="主导航">
+        <div class="nav-links">
+          <a href="#research">科研</a>
+          <a href="#projects">项目</a>
+          <a href="#awards">成果</a>
+          <a href="#contact">联系</a>
+        </div>
+      </nav>
+
+      <section class="hero-content" aria-labelledby="hero-title">
+        <p class="eyebrow" id="hero-school"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">查看简介</a>
+          <a class="button secondary" href="./public/resume-yifan-ding.pdf">下载简历</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="overview section" aria-label="核心概览">
+        <div class="overview-grid" id="stats"></div>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>复合型工程研究</h2>
+        </div>
+        <div class="intro-body">
+          <p id="about-text"></p>
+          <div class="skill-list" id="skills"></div>
+        </div>
+      </section>
+
+      <section class="section two-column" id="research">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Research</p>
+          <h2>科研项目与论文</h2>
+          <p>以量子机器学习为主线，兼具控制、硬件和系统实现能力。</p>
+        </div>
+        <div class="stack" id="research-list"></div>
+      </section>
+
+      <section class="section two-column" id="projects">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>工程项目与竞赛</h2>
+          <p>从算法设计、电路实现到机器人系统调试，覆盖研究与工程落地。</p>
+        </div>
+        <div class="timeline" id="projects-list"></div>
+      </section>
+
+      <section class="section achievements" id="awards">
+        <div class="section-heading">
+          <p class="eyebrow">Achievements</p>
+          <h2>个人荣誉</h2>
+        </div>
+        <div class="achievement-grid" id="achievements-list"></div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>保持联系</h2>
+          <p>欢迎围绕量子机器学习、智能控制、嵌入式系统与硬件设计展开交流。</p>
+        </div>
+        <div class="contact-links" id="contact-links"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Yifan Ding</span>
+      <span>Built for GitHub Pages · keyword: yfding</span>
+    </footer>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

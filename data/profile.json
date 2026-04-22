@@ -1,0 +1,146 @@
+{
+  "name": "丁祎帆 · Yifan Ding",
+  "current": "上海工程技术大学 · 控制科学与工程硕士研究生",
+  "tagline": "研究方向聚焦机器学习与量子计算，同时具备嵌入式系统、集成电路设计、控制算法和机器人竞赛的工程实践经验。",
+  "about": "目前就读于上海工程技术大学电子电气工程学院，师从周南润教授，参与多项国家级课题，开展量子机器学习算法研究。本科阶段长期参与电子设计、智能车、机械创新和机器人系统项目，形成了从电路、算法、控制到系统调试的复合型能力结构。",
+  "stats": [
+    {
+      "value": "1",
+      "label": "SCI 论文已发表"
+    },
+    {
+      "value": "2",
+      "label": "论文在投或准备投稿"
+    },
+    {
+      "value": "5",
+      "label": "国家级竞赛证书"
+    },
+    {
+      "value": "42",
+      "label": "省级竞赛证书"
+    },
+    {
+      "value": "5",
+      "label": "发明专利"
+    },
+    {
+      "value": "6",
+      "label": "实用新型专利"
+    },
+    {
+      "value": "5",
+      "label": "外观专利"
+    },
+    {
+      "value": "9",
+      "label": "软件著作"
+    }
+  ],
+  "skills": [
+    "Quantum Machine Learning",
+    "Qiskit / PennyLane",
+    "Machine Learning",
+    "PID / ADRC 控制",
+    "Altium Designer / KiCad",
+    "MATLAB / Multisim",
+    "SolidWorks / AutoCAD"
+  ],
+  "research": [
+    {
+      "period": "2024.09 - 至今",
+      "title": "国家自然科学基金项目-基于变分量子线路的混合型量子机器学习算法研究",
+      "role": "项目参与人",
+      "summary": "设计 VQC 并结合经典优化算法进行量子门参数优化，已产出论文成果，并配合导师完成结题工作"
+    },
+    {
+      "type": "Journal Article",
+      "title": "Quantum generative adversarial network based on the quantum Born machine",
+      "detail": "**Yifan Ding**, Zi Li, Nanrun Zhou*. Advanced Engineering Informatics, 2025, 68: 103622.",
+      "meta": "中科院 1 区 Top，IF 9.9"
+    },
+    {
+      "type": "Under Review",
+      "title": "Lightweight quantum convolutional neural network with dynamic gating parameter sharing",
+      "detail": "**Yifan Ding**, Bicheng Xu, Naixue Xiong, Nanrun Zhou*. IEEE Transactions on Multimedia.",
+      "meta": "Under Review, 21 April 2026"
+    },
+    {
+      "type": "Under Review",
+      "title": "HCQCNN-TN: A Fuzzy-Decision Hybrid Conditional Quantum Convolutional Neural Network Based on Tensor Network for Image Classification",
+      "detail": "**Yifan Ding**, Junjie Pei, Lihua Gong, Chen Gong, Nanrun Zhou*. IEEE Transactions on Fuzzy Systems.",
+      "meta": "量子卷积神经网络、张量网络、图像分类"
+    },
+    {
+      "type": "Review Service",
+      "title": "Advanced Engineering Informatics、Machine Learning Science and Technology等 审稿人",
+      "detail": "担任Advanced Engineering Informatics、Machine Learning Science and Technology等计算机及工程技术领域高水平期刊审稿人。",
+      "meta": "Academic service"
+    }
+  ],
+  "projects": [
+    {
+      "period": "2021.05 - 2024.08",
+      "title": "山东建筑大学电子设计联合实验室",
+      "role": "总负责人",
+      "summary": "负责实验室本科实验、综合管理、创新能力培训与竞赛项目推进，每学期培训成员 50 人以上。"
+    },
+    {
+      "period": "2021.06 - 2023.08",
+      "title": "全国大学生电子设计竞赛",
+      "role": "队长",
+      "summary": "负责系统架构、电路设计、代码架构与调试，完成同轴线缆长度与终端负载检测装置等项目，获全国二等奖。"
+    },
+    {
+      "period": "2021.06 - 2023.08",
+      "title": "全国大学生智能汽车竞赛",
+      "role": "队长",
+      "summary": "参与电磁四轮、平衡单车与独轮组别，负责机械结构、电路设计、算法优化与系统调试，获山东赛区一等奖。"
+    },
+    {
+      "period": "2022.07 - 2022.12",
+      "title": "全国大学生机械创新设计大赛",
+      "role": "队长",
+      "summary": "设计新型智能海面环境污染清理船，负责机械、控制、电源与项目推进，获全国三等奖。"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "研究生国家奖学金",
+      "detail": "2025 年研究生国家奖学金"
+    },
+    {
+      "title": "研究生学业奖学金",
+      "detail": "2025 年研究生学业奖学金一等奖"
+    },
+    {
+      "title": "优秀团干部",
+      "detail": "2021 年优秀团干部"
+    },
+    {
+      "title": "优秀学生",
+      "detail": "2022 年优秀学生"
+    }
+
+  ],
+  "contact": [
+    {
+      "label": "Email: 1369769205@qq.com",
+      "type": "copy",
+      "value": "1369769205@qq.com"
+    },
+    {
+      "label": "微信: DDD_Panda_DDD",
+      "type": "copy",
+      "value": "DDD_Panda_DDD"
+    },
+    {
+      "label": "GitHub: yfding",
+      "href": "https://github.com/yfding"
+    },
+    {
+      "label": "Resume PDF",
+      "href": "./public/resume-yifan-ding.pdf"
+    }
+  ]
+}
