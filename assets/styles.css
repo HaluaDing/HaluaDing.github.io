@@ -256,14 +256,16 @@ h3 {
 }
 
 .stack,
-.timeline {
+.timeline,
+.education-list {
   display: grid;
   gap: 16px;
 }
 
 .card,
 .timeline-item,
-.achievement {
+.achievement,
+.education-item {
   padding: 24px;
 }
 
@@ -289,6 +291,24 @@ h3 {
 .role {
   margin-bottom: 8px;
   font-weight: 800;
+}
+
+.education .section-heading {
+  margin-bottom: 28px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.education-detail p:last-child {
+  margin-bottom: 0;
 }
 
 .achievements .section-heading {
@@ -354,7 +374,8 @@ h3 {
   .achievement-grid,
   .intro,
   .two-column,
-  .contact {
+  .contact,
+  .education-item {
     grid-template-columns: 1fr;
   }
 
@@ -392,7 +413,7 @@ h3 {
   .nav-links {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 0;
     justify-content: stretch;
   }

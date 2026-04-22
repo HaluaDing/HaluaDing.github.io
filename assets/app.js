@@ -32,6 +32,24 @@ const renderSkills = (skills) => {
   skills.forEach((skill) => container.append(create('span', 'pill', skill)));
 };
 
+const renderEducation = (items) => {
+  const container = document.querySelector('#education-list');
+  items.forEach((item) => {
+    const article = create('article', 'education-item');
+    const main = create('div');
+    main.append(create('span', 'time', item.period));
+    main.append(create('h3', '', item.school));
+    main.append(create('p', 'role', item.degree));
+    main.append(create('p', '', item.college + ' · ' + item.location));
+
+    const detail = create('div', 'education-detail');
+    detail.append(create('p', '', '研究方向：' + item.focus));
+    detail.append(create('p', '', '主修课程：' + item.courses));
+    article.append(main, detail);
+    container.append(article);
+  });
+};
+
 const renderResearch = (items) => {
   const container = document.querySelector('#research-list');
   items.forEach((item) => {
@@ -112,6 +130,7 @@ const renderProfile = async () => {
 
   renderStats(profile.stats);
   renderSkills(profile.skills);
+  renderEducation(profile.education);
   renderResearch(profile.research);
   renderProjects(profile.projects);
   renderAchievements(profile.achievements);
