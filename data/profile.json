@@ -152,6 +152,11 @@
       "label": "Email: yfding@sues.edu.cn",
       "type": "copy",
       "value": "yfding@sues.edu.cn"
+    },  
+    {
+      "label": "微信: DDD_Panda_DDD",
+      "type": "copy",
+      "value": "DDD_Panda_DDD"
     },
     {
       "label": "GitHub: HaluaDing",
