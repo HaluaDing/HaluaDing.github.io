@@ -460,12 +460,11 @@ h3 {
   display: flex;
   width: max-content;
   gap: 18px;
-  animation: message-scroll 42s linear infinite;
+  animation: message-scroll var(--duration, 42s) linear infinite;
 }
 
 .message-track.reverse {
   animation-direction: reverse;
-  animation-duration: 50s;
 }
 
 .message-stage:hover .message-track {

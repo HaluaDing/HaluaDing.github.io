@@ -130,11 +130,24 @@ const renderGuestbook = (messages) => {
     }
   ];
   const source = messages.length ? messages : fallback;
+  const rowMessages = source.reduce(
+    (groups, message, index) => {
+      groups[index % 2].push(message);
+      return groups;
+    },
+    [[], []]
+  );
+
+  if (!rowMessages[1].length) {
+    rowMessages[1] = [...rowMessages[0]].reverse();
+  }
 
   rows.forEach((row, rowIndex) => {
-    [...source, ...source].forEach((message, index) => {
+    const sequence = rowMessages[rowIndex];
+    const trackMessages = [...sequence, ...sequence, ...sequence, ...sequence];
+    row.style.setProperty('--duration', `${Math.max(34, sequence.length * 13)}s`);
+    trackMessages.forEach((message) => {
       const item = create('article', 'message-pill');
-      item.style.setProperty('--delay', `${(index + rowIndex * 3) * -1.8}s`);
       item.append(create('p', 'message-content', message.content));
       item.append(create('p', 'message-meta', `${message.name} · ${message.identity} · ${message.time}`));
       row.append(item);
