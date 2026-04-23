@@ -1,4 +1,5 @@
 const profileUrl = './data/profile.json';
+const messagesUrl = './data/messages.json';
 
 const create = (tag, className, text) => {
   const element = document.createElement(tag);
@@ -117,6 +118,31 @@ const renderContact = (links) => {
   });
 };
 
+const renderGuestbook = (messages) => {
+  const stage = document.querySelector('#message-stage');
+  const rows = [create('div', 'message-track'), create('div', 'message-track reverse')];
+  const fallback = [
+    {
+      name: '留言板',
+      identity: '系统',
+      time: '待更新',
+      content: '留言审核通过后，会在这里滚动展示。'
+    }
+  ];
+  const source = messages.length ? messages : fallback;
+
+  rows.forEach((row, rowIndex) => {
+    [...source, ...source].forEach((message, index) => {
+      const item = create('article', 'message-pill');
+      item.style.setProperty('--delay', `${(index + rowIndex * 3) * -1.8}s`);
+      item.append(create('p', 'message-content', message.content));
+      item.append(create('p', 'message-meta', `${message.name} · ${message.identity} · ${message.time}`));
+      row.append(item);
+    });
+    stage.append(row);
+  });
+};
+
 const renderName = (name) => {
   const title = document.querySelector('#hero-title');
   title.textContent = '';
@@ -126,8 +152,12 @@ const renderName = (name) => {
 };
 
 const renderProfile = async () => {
-  const response = await fetch(profileUrl);
+  const [response, messagesResponse] = await Promise.all([
+    fetch(profileUrl),
+    fetch(messagesUrl)
+  ]);
   const profile = await response.json();
+  const messages = await messagesResponse.json();
 
   document.querySelector('#hero-school').textContent = profile.current;
   renderName(profile.name);
@@ -142,6 +172,7 @@ const renderProfile = async () => {
   renderProjects(profile.projects);
   renderAchievements(profile.achievements);
   renderContact(profile.contact);
+  renderGuestbook(messages);
 };
 
 renderProfile().catch((error) => {

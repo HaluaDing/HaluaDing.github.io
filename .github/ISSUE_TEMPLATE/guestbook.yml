@@ -1,0 +1,29 @@
+name: 留言板留言
+description: 提交给个人主页留言板，审核后可能展示在网站上。
+title: "Guestbook: "
+labels: ["guestbook", "pending-review"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 留言人名字
+      description: 你希望展示在留言板上的名字。
+      placeholder: 例如：张三
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: 身份
+      description: 可以写同学、老师、合作者、访客等。
+      placeholder: 例如：同学
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: 留言内容
+      description: 审核通过后可能公开展示，请不要填写隐私信息。
+      placeholder: 写下你的留言。
+    validations:
+      required: true
